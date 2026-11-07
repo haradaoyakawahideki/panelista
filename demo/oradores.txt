@@ -1,0 +1,9 @@
+MOCION: Esta Cámara eliminaría el voto obligatorio en el Perú
+P1: Lucía Quispe
+O1: Mateo Huamán
+P2: Valeria Ccori
+O2: Diego Mamani
+P3: Andrés Flores
+O3: Camila Rojas
+OR: Mateo Huamán
+PR: Lucía Quispe
