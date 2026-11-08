@@ -1,0 +1,255 @@
+{
+ "resumen": "El debate giró principalmente en torno a si el voto obligatorio fortalece o debilita la democracia en el Perú, tocando los temas de representación política de los sectores vulnerables y la legitimidad y libertad del acto de votar. Proposición defendió que el voto debe ser un derecho ejercido libremente y que la obligatoriedad genera desconfianza y participación no auténtica; Oposición sostuvo que el voto obligatorio protege la igualdad política y evita la exclusión de los pobres y jóvenes, usando como evidencia la experiencia chilena. La interacción se centró en la representatividad y la libertad, con menos profundidad en temas de compra de votos y deber cívico.",
+ "choques": [
+  {
+   "titulo": "¿El voto obligatorio garantiza una representación más igualitaria?",
+   "proposicion": "Aun con voto obligatorio, los sectores pobres están mal representados porque votan obligados, sin información ni convicción, resultando en fragmentación y desconfianza. El voto voluntario obliga a los partidos a atraer a todos los sectores.",
+   "oposicion": "Con voto voluntario, los sectores más pobres y rurales participan menos, como en Chile post-2012; los partidos solo gobernarían para los que votan. El voto obligatorio es necesario para asegurar su representación.",
+   "tipo": "explícito",
+   "ganador": "Oposición",
+   "por_que": "Oposición presentó evidencia clara (caso de Chile, O1 0:22 'la participación cayó por debajo de la mitad. Y cayó más en las comunas pobres') y presionó a Proposición por no responder con evidencia específica (O2 0:19 'no respondió a nuestro argumento de Chile'), mientras que Proposición solo planteó una esperanza de cambio gradual y no refutó el ejemplo. Su caracterización, aunque interesante, no contestó el riesgo concreto de subrepresentación.",
+   "margen": "claro",
+   "peso": "alto",
+   "por_que_peso": "Este tema fue reconocido por ambos equipos (P3 0:00, O3 0:00) y es central para la justificación de la obligatoriedad: si el voto voluntario deja afuera a los más vulnerables, es un riesgo mayor que la calidad del voto individual. Reflejado en las réplicas (OR 0:07).",
+   "citas": [
+    {
+     "discurso": "O1",
+     "minuto": "0:22",
+     "texto": "la participación cayó por debajo de la mitad. Y cayó más en las comunas pobres."
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:19",
+     "texto": "no respondió a nuestro argumento de Chile. Solo dijo que con el tiempo la gente se acostumbraría."
+    },
+    {
+     "discurso": "P3",
+     "minuto": "0:13",
+     "texto": "los pobres ya están mal representados aunque voten. Votan obligados, y sin información."
+    }
+   ]
+  },
+  {
+   "titulo": "¿El voto obligatorio limita la libertad y la legitimidad del voto?",
+   "proposicion": "El voto con sanción no es libre; el derecho deja de ser tal si se coacciona (P1 0:00, P1 0:23). Muchos votos actuales son blancos o viciados (P1 0:32), que serían ruido, no preferencia real. Eliminar la obligación aumentaría la legitimidad y la libertad ciudadana (P3 0:26, PR 0:03).",
+   "oposicion": "Ningún derecho es absoluto, el voto es un deber cívico mínimo y de bajo costo (O2 0:24, O3 0:20), como pagar impuestos; la multa es baja y dispensable, por tanto no hay coacción real (O2 0:36).",
+   "tipo": "explícito",
+   "ganador": "Proposición",
+   "por_que": "Proposición sostuvo mejor la idea de que la amenaza de multa interfiere con la libertad y autenticidad del voto (P1 0:23, P3 0:32). Oposición solo defendió que es un deber cívico y que la multa es baja, pero no refutó que la coacción deslegitima el acto. La justificación de deber cívico no fue desarrollada a profundidad ni comparada con otros deberes de forma convincente, y Proposición mostró que esto puede generar desconfianza (P3 0:19, PR 0:03).",
+   "margen": "estrecho",
+   "peso": "medio",
+   "por_que_peso": "Aunque importante para la valoración democrática, este choque es menos decisivo que la pregunta sobre representación real de los grupos vulnerables, que ambos equipos priorizaron y que tiene mayor impacto.",
+   "citas": [
+    {
+     "discurso": "P1",
+     "minuto": "0:00",
+     "texto": "votar es un derecho, y un derecho que se impone con multas, deja de ser libre."
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:24",
+     "texto": "Viviren democracia tiene costos mínimos. Votar una vez cada cierto tiempo es uno de ellos."
+    },
+    {
+     "discurso": "P3",
+     "minuto": "0:32",
+     "texto": "Un derecho que se ejerce bajo amenaza, no es un derecho pleno."
+    },
+    {
+     "discurso": "O3",
+     "minuto": "0:20",
+     "texto": "Ningún derecho es absoluto. Aceptamos deberes mínimos."
+    }
+   ]
+  },
+  {
+   "titulo": "¿El voto voluntario mejora la calidad de la política y obliga a los partidos a esforzarse más?",
+   "proposicion": "Con el voto voluntario, los partidos tendrían que buscar convencer y movilizar con propuestas, no solo confiar en la asistencia obligatoria (P2 0:00).",
+   "oposicion": "En la práctica, los partidos solo buscarían movilizar a sus bases (O2 0:05). En contextos como EE.UU., esto lleva a campañas sesgadas; Proposición no evidenció que esto cambiaría en Perú.",
+   "tipo": "explícito",
+   "ganador": "Oposición",
+   "por_que": "Oposición refutó con plausibilidad al señalar que la movilización voluntaria tiende a enfocarse en quienes ya son políticamente activos (O2 0:05), y que esto puede aumentar la desigualdad, mientras que Proposición no mostró ejemplos concretos de éxito de su modelo, ni respondió en detalle a este punto. Tampoco logra contestar la evidencia internacional que trajo Oposición.",
+   "margen": "estrecho",
+   "peso": "medio",
+   "por_que_peso": "Este choque añade profundidad, pero es secundario respecto a la cuestión central de la representatividad en la democracia peruana, que dominó la agenda del debate.",
+   "citas": [
+    {
+     "discurso": "P2",
+     "minuto": "0:00",
+     "texto": "cuando el voto es voluntario, los partidos tienen que salir a buscar votantes, hacer propuestas, y movilizar."
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:05",
+     "texto": "¿a cuáles? A los que ya votan. Los sectores urbanos y con más educación."
+    }
+   ]
+  }
+ ],
+ "puntajes": [
+  {
+   "discurso": "P1",
+   "estilo": 28,
+   "contenido": 28,
+   "estrategia": 14,
+   "total": 70,
+   "fortalezas": "Explicó claramente la postura y enfatizó el valor de la libertad y legitimidad; buena división de argumentos (0:11, 0:19).",
+   "a_mejorar": "Caracterización del panorama de representación y refutación a posibles desventajas concretas (ejemplo de Chile).",
+   "como_corregir": "Podía anticipar el ejemplo de Chile (O1 0:22) y caracterizar mejor por qué el voto obligatorio no necesariamente genera representación efectiva, con evidencias empíricas propias, antes de que Oposición lo mencionara.",
+   "citas": [
+    {
+     "discurso": "P1",
+     "minuto": "0:23",
+     "texto": "Un voto dado por miedo a la multa, no expresa una preferencia real."
+    }
+   ]
+  },
+  {
+   "discurso": "O1",
+   "estilo": 28,
+   "contenido": 29,
+   "estrategia": 14,
+   "total": 71,
+   "fortalezas": "Usó el ejemplo de Chile como evidencia relevante y comparó el impacto diferencial en sectores vulnerables; clara priorización de temas (0:15, 0:22).",
+   "a_mejorar": "Comparativa de legitimidad y posible refutación más fuerte a la narrativa de la libertad/legitimidad de Proposición.",
+   "como_corregir": "Podía explicar explícitamente por qué el deber cívico y la legitimidad no se ven afectados por la obligación, usando comparaciones más sólidas entre distintos derechos.",
+   "citas": [
+    {
+     "discurso": "O1",
+     "minuto": "0:22",
+     "texto": "En países con voto voluntario... la participación cayó por debajo de la mitad."
+    }
+   ]
+  },
+  {
+   "discurso": "P2",
+   "estilo": 27,
+   "contenido": 27,
+   "estrategia": 13,
+   "total": 67,
+   "fortalezas": "Sostuvo el segundo argumento y ligó la libertad al incentivo de partidos a mejorar propuestas (0:00, 0:21).",
+   "a_mejorar": "Refutación concreta al caso chileno y anticipar el giro de movilización selectiva.",
+   "como_corregir": "Podía pedir ejemplos comparativos positivos o enfatizar cómo, con educación cívica y tiempo, la participación se mantiene en otros países, en vez de solo 'creemos que con el tiempo...' (0:21).",
+   "citas": [
+    {
+     "discurso": "P2",
+     "minuto": "0:21",
+     "texto": "la gente se acostumbraría a votar por convicción."
+    }
+   ]
+  },
+  {
+   "discurso": "O2",
+   "estilo": 27,
+   "contenido": 28,
+   "estrategia": 13,
+   "total": 68,
+   "fortalezas": "Refutó directamente el argumento de movilización, presionó sobre la ausencia de respuesta al caso de Chile (0:19); mantuvo claridad estructural.",
+   "a_mejorar": "Profundizar el argumento del deber cívico/legitimidad y menos tiempo en repetir puntos previos.",
+   "como_corregir": "En vez de solo decir que 'el beneficio para la representación de los más pobres es enorme', comparar con países donde sí se mantiene la representación con voto voluntario, o analizar qué pasaría si bajara la participación.",
+   "citas": [
+    {
+     "discurso": "O2",
+     "minuto": "0:19",
+     "texto": "no respondió a nuestro argumento de Chile. Solo dijo que con el tiempo la gente se acostumbraría."
+    }
+   ]
+  },
+  {
+   "discurso": "P3",
+   "estilo": 28,
+   "contenido": 27,
+   "estrategia": 13,
+   "total": 68,
+   "fortalezas": "Identificó explícitamente los choques y defendió bien la legitimidad y libertad (0:26, 0:32). Señaló la ineficacia de la obligación para la representación verdadera.",
+   "a_mejorar": "Reconstrucción más sólida del daño por subrepresentación y respuesta específica a la evidencia empírica adversa.",
+   "como_corregir": "Podía decir por qué el caso chileno no se aplicaría igual al Perú, o proponer elementos únicos del contexto nacional (0:13).",
+   "citas": [
+    {
+     "discurso": "P3",
+     "minuto": "0:13",
+     "texto": "los pobres ya están mal representados aunque voten. Votan obligados, y sin información."
+    }
+   ]
+  },
+  {
+   "discurso": "O3",
+   "estilo": 28,
+   "contenido": 28,
+   "estrategia": 14,
+   "total": 70,
+   "fortalezas": "Mantuvo el foco en la representación, presionó sobre la falta de respuesta y trajo un punto nuevo sobre compra de votos (aunque tarde); buena reafirmación del impacto negativo de la propuesta (0:07, 0:14).",
+   "a_mejorar": "El argumento sobre compra de votos era material nuevo; mejor centrar comparativa sobre argumentos principales.",
+   "como_corregir": "Podía dedicar ese tiempo a ampliar la refutación al concepto de legitimidad, vinculándolo más fuerte con la igualdad política.",
+   "citas": [
+    {
+     "discurso": "O3",
+     "minuto": "0:14",
+     "texto": "nunca respondió a la evidencia de Chile."
+    }
+   ]
+  },
+  {
+   "discurso": "OR",
+   "estilo": 15,
+   "contenido": 16,
+   "estrategia": 7,
+   "total": 38,
+   "fortalezas": "Resumen claro del eje de representación y presión sobre la falta de respuesta a la evidencia (0:07, 0:14).",
+   "a_mejorar": "Mayor desarrollo del choque sobre la libertad y legitimidad, no solo la representación.",
+   "como_corregir": "Dedicar unos 10 segundos a explicar brevemente por qué la coacción no es grave frente al beneficio colectivo.",
+   "citas": [
+    {
+     "discurso": "OR",
+     "minuto": "0:07",
+     "texto": "mostramos, con el caso de Chile, que el voto voluntario hace que voten menos los pobres."
+    }
+   ]
+  },
+  {
+   "discurso": "PR",
+   "estilo": 14,
+   "contenido": 15,
+   "estrategia": 6,
+   "total": 35,
+   "fortalezas": "Enfatizó la libertad y el daño de la coacción; identificó bien que el argumento sobre compra de votos fue nuevo (0:03, 0:11).",
+   "a_mejorar": "Comparativa explícita del peso de los choques y tener respuestas alternativas a la evidencia empírica de Oposición.",
+   "como_corregir": "En vez de decir simplemente que 'obligar es incluir', podía decir por qué la obligación genera desconfianza y no identidad democrática, con una frase clara tras el minuto 0:11.",
+   "citas": [
+    {
+     "discurso": "PR",
+     "minuto": "0:03",
+     "texto": "la inclusión real ocurre cuando los partidos tienen que ganarse el voto"
+    }
+   ]
+  }
+ ],
+ "feedback_equipos": [
+  {
+   "bando": "Proposición",
+   "que_funciono": "Argumentaron bien la importancia de la libertad y la legitimidad, y estructuraron el caso de forma clara, destacando la división de choques y el valor del voto auténtico.",
+   "que_mejorar": "Necesitan responder con evidencia más sólida y directa a los casos empíricos traídos por la Oposición, especialmente sobre los riesgos de subrepresentación documentados en Chile.",
+   "como": "En futuros debates, atiendan explícitamente los ejemplos comparativos con contraejemplos o explicaciones del porqué el contexto peruano sería diferente. Si oponen una narrativa de cambio cultural ('la gente se acostumbraría'), refuércenla con datos o ejemplos internacionales, y refuten más fuerte la narrativa de exclusión de los vulnerables, desde el primer discurso."
+  },
+  {
+   "bando": "Oposición",
+   "que_funciono": "Usaron bien evidencia internacional (Chile), mantuvieron el eje del debate en el mayor riesgo de exclusión política y enfatizaron la relevancia para los sectores vulnerables.",
+   "que_mejorar": "El argumento del deber cívico y la legitimidad democrática no fue comparado de forma suficientemente extensa contra el valor de la libertad y la legitimidad individual.",
+   "como": "En próximas rondas, intenten ilustrar mejor la relación entre deber cívico y democracia, usando más comparaciones políticas y filosóficas, y anclando el beneficio colectivo de la representación forzada no solo en la cantidad, sino también en calidad democrática e ideales comparativos."
+  }
+ ],
+ "ganador": "Oposición",
+ "ponderacion_final": "El choque central fue el de la representación, donde Oposición presentó evidencia concreta y plausibilidad sobre el daño que generaría el voto voluntario en los sectores más vulnerables, mientras Proposición no contestó esta evidencia de modo efectivo. El segundo choque, libertad y legitimidad, lo gana Proposición pero con margen más estrecho, pues la coacción es simbólica y Oposición mínimamente justificó el deber cívico. Oposición también logró refutar el mecanismo de la mejora política propuesta por Proposición, con base en el comportamiento observado en otras democracias. Así, la suma de los choques, con predominio del eje distributivo, inclina el debate a Oposición.",
+ "lectura_principal": {
+  "ganador": "Oposición",
+  "argumento": "Un juez razonable ve que la evidencia presentada por Oposición sobre la caída de la participación y su impacto en los sectores más vulnerables -y la falta de refutación específica por parte de Proposición- hacen prevalecer el argumento de que el voto obligatorio es una herramienta protectora de la igualdad democrática. Pese a que Proposición ganó el choque de libertad, este pesa menos ante el riesgo concreto y plausible de exclusión política que Oposición prueba con datos y ejemplos."
+ },
+ "lectura_alternativa": {
+  "ganador": "Proposición",
+  "argumento": "Un juez alternativo podría, con base en la narrativa de la falta de representación real (no solo participación numérica), considerar que el voto obligatorio enmascara una democracia poco auténtica y que la libertad de elegir expresaría preferencias más legítimas y forzaría a los partidos a acercarse realmente a los ciudadanos, incluso si la participación cae. Sin embargo, esto requeriría darle un peso superior al valor filosófico de la libertad y la legitimidad del acto democrático, por encima de la representatividad empírica probada."
+ },
+ "confianza": "alta",
+ "advertencias": [
+  "No es posible evaluar lenguaje corporal, gestualidad ni contacto visual por audio. El argumento sobre compra de votos fue traído recién en O3, por lo que no recibe crédito sustantivo. Las citas se tomaron de las transcripciones; si alguna parte fuera inaudible se indicaría."
+ ]
+}

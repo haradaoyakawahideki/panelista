@@ -1,0 +1,352 @@
+{
+ "resumen": "La Proposición defendió que eliminar la multa haría más libre y legítimo el voto, además de incentivar a los partidos a convencer a la ciudadanía. La Oposición sostuvo que el voto voluntario reduciría especialmente la participación de pobres, jóvenes y zonas rurales, debilitando la igualdad política. Gana Oposición porque la Proposición no respondió de manera suficiente al principal riesgo comparativo: que la participación voluntaria excluya más a quienes ya tienen menor representación.",
+ "choques": [
+  {
+   "titulo": "¿El voto voluntario mejora o empeora la representación de los sectores vulnerables?",
+   "proposicion": "La obligación no garantiza una representación real: las personas pueden votar sin información y el resultado puede ser fragmentación y desconfianza. La Proposición afirmó que los partidos deberían ganarse el voto y que eso produciría una inclusión más genuina.",
+   "oposicion": "Al eliminar la obligación, participarían menos los pobres, jóvenes y habitantes de zonas rurales; por ello, los políticos tendrían más incentivos para gobernar para los sectores que sí votan.",
+   "tipo": "explícito",
+   "ganador": "Oposición",
+   "por_que": "La Oposición identificó un mecanismo claro: si el voto es voluntario, los grupos con menos recursos o mayores dificultades de participación podrían votar menos y perder influencia. Presentó como apoyo el caso de Chile y afirmó que la caída fue mayor en comunas pobres. La Proposición respondió que los pobres ya están mal representados, pero no explicó por qué una menor participación de esos grupos corregiría o no agravaría el problema. También afirmó que los partidos se verían obligados a convencer, pero no mostró por qué buscarían precisamente a quienes tienen más barreras para votar. La respuesta de la Oposición en O3 reconstruyó bien el punto: si ya existe mala representación, reducir la participación puede empeorarla. El choque lo gana Oposición, aunque no por margen amplio, porque su evidencia fue mencionada de forma breve y no se desarrollaron sus límites.",
+   "margen": "estrecho",
+   "peso": "alto",
+   "por_que_peso": "Es el principal impacto democrático de la moción y fue expresamente priorizado por la Oposición en su réplica: dijo que el debate se decidió en la representación. La Proposición también trató la representación como uno de sus dos choques, pero no logró responder el riesgo planteado.",
+   "citas": [
+    {
+     "discurso": "O1",
+     "minuto": "0:07",
+     "texto": "olvida quién deja de votar cuando el voto es voluntario. Los pobres, los jóvenes, y las zonas rurales"
+    },
+    {
+     "discurso": "O1",
+     "minuto": "0:22",
+     "texto": "la participación cayó por debajo de la mitad. Y cayó más en las comunas pobres"
+    },
+    {
+     "discurso": "P2",
+     "minuto": "0:05",
+     "texto": "los partidos tienen que salir a buscar votantes, hacer propuestas, y movilizar"
+    },
+    {
+     "discurso": "P3",
+     "minuto": "0:13",
+     "texto": "los pobres ya están mal representados aunque voten"
+    },
+    {
+     "discurso": "O3",
+     "minuto": "0:07",
+     "texto": "Su solución es que voten menos. Eso empeora el problema, no lo arregla"
+    }
+   ]
+  },
+  {
+   "titulo": "¿La obligación de votar es una restricción ilegítima de la libertad o un deber cívico razonable?",
+   "proposicion": "Un voto emitido para evitar una multa no expresa una preferencia plenamente libre; por tanto, eliminar la multa haría más legítimo el ejercicio del derecho.",
+   "oposicion": "Votar puede ser un deber cívico mínimo, comparable con otros deberes ciudadanos. Como la multa es baja y puede dispensarse en ciertos casos, el costo individual sería pequeño frente al beneficio representativo.",
+   "tipo": "criterio",
+   "ganador": "Proposición",
+   "por_que": "La Proposición estableció con claridad el criterio de libertad: si existe una sanción por no participar, el consentimiento electoral está condicionado. La Oposición respondió correctamente que los derechos pueden convivir con deberes y que debe compararse el costo de la obligación con el beneficio colectivo. Sin embargo, se limitó a afirmar que la multa es baja y que puede dispensarse, sin explicar por qué una sanción económica no afecta de manera relevante a quienes tienen menos recursos. P3 aprovechó esa concesión al señalar que, si la obligación es casi simbólica, la Oposición debía justificar por qué es necesaria. La Proposición gana este choque por un margen estrecho: desarrolló mejor el principio, pero no demostró por sí sola que la libertad tenga más peso que la igualdad política.",
+   "margen": "estrecho",
+   "peso": "medio",
+   "por_que_peso": "La libertad fue el encuadre inicial de la Proposición y reapareció en P3 y PR. Sin embargo, la ponderación queda por debajo de la representación porque la Oposición mostró un posible daño distributivo concreto, mientras que la Proposición explicó principalmente un principio normativo.",
+   "citas": [
+    {
+     "discurso": "P1",
+     "minuto": "0:00",
+     "texto": "votar es un derecho, y un derecho que se impone con multas, deja de ser libre"
+    },
+    {
+     "discurso": "O1",
+     "minuto": "0:49",
+     "texto": "el voto obligatorio, es un deber cívico mínimo, como pagar impuestos"
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:31",
+     "texto": "la multa en el Perú es baja, y se puede dispensar para quien no puede pagar"
+    },
+    {
+     "discurso": "P3",
+     "minuto": "0:32",
+     "texto": "Un derecho que se ejerce bajo amenaza, no es un derecho pleno"
+    }
+   ]
+  },
+  {
+   "titulo": "¿El voto voluntario produciría partidos más responsables o campañas más excluyentes?",
+   "proposicion": "Sin obligación, los partidos tendrían que construir bases, presentar propuestas y convencer a los votantes, en lugar de depender de una ciudadanía que vota porque debe hacerlo.",
+   "oposicion": "Los partidos podrían concentrar sus esfuerzos en quienes ya tienen mayor probabilidad de votar, especialmente sectores urbanos y con más educación, sin necesidad de convencer a los grupos menos participativos.",
+   "tipo": "implícito",
+   "ganador": "Oposición",
+   "por_que": "La Proposición presentó una cadena causal plausible, pero incompleta: no mostró por qué los partidos buscarían a todos los ciudadanos y no solo a los votantes más fáciles de movilizar. O2 respondió directamente con esa pregunta y vinculó el problema con campañas centradas en las propias bases. La Proposición no contestó específicamente esa objeción; P2 solo sostuvo que con el tiempo la gente se acostumbraría a votar por convicción. Esa respuesta no resuelve quiénes serían incluidos durante el periodo de transición. La Oposición gana estrechamente porque ofreció una respuesta directa al mecanismo propuesto por P2, aunque tampoco desarrolló evidencia suficiente sobre cómo funcionarían las campañas en el Perú.",
+   "margen": "estrecho",
+   "peso": "medio",
+   "por_que_peso": "Este choque sostiene la principal ventaja institucional que la Proposición atribuyó al voto voluntario, pero quedó menos desarrollado que el choque de representación. Como la cadena causal de la Proposición no fue reconstruida después de la objeción de O2, su peso final disminuye.",
+   "citas": [
+    {
+     "discurso": "P2",
+     "minuto": "0:00",
+     "texto": "los partidos tienen que salir a buscar votantes, hacer propuestas, y movilizar"
+    },
+    {
+     "discurso": "P2",
+     "minuto": "0:13",
+     "texto": "El voto voluntario, premia a los partidos que construyen bases"
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:05",
+     "texto": "Sí, pero ¿a cuáles? A los que ya votan"
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:12",
+     "texto": "Los sectores urbanos y con más educación"
+    },
+    {
+     "discurso": "OR",
+     "minuto": "0:14",
+     "texto": "La proposición nunca respondió con evidencia, sólo con la esperanza de que la gente se acostumbre"
+    }
+   ]
+  },
+  {
+   "titulo": "¿El voto en blanco o viciado muestra participación inútil o una forma de mensaje político?",
+   "proposicion": "Una proporción importante de votos blancos o viciados mostraría que obligar a participar produce ruido y no preferencias políticas reales.",
+   "oposicion": "El voto blanco también puede comunicar rechazo o insatisfacción y, bajo la obligación, al menos todas las personas están presentes en el proceso electoral.",
+   "tipo": "caracterización",
+   "ganador": "Oposición",
+   "por_que": "La Proposición trató los votos blancos y viciados como evidencia de que la participación forzada no expresa preferencias. La Oposición ofreció una caracterización alternativa: esos votos pueden ser un mensaje y su existencia depende de que las personas participen. La Proposición no respondió esa interpretación ni explicó por qué el voto blanco no puede ser una forma válida de expresar rechazo. Este choque pesa poco porque el dato fue presentado sin desarrollo y no se conectó de manera decisiva con la comparación entre ambos sistemas.",
+   "margen": "estrecho",
+   "peso": "bajo",
+   "por_que_peso": "El punto sirve como ejemplo para la tesis de legitimidad, pero no decide por sí mismo si el voto voluntario mejora la representación o la calidad democrática. La Oposición respondió de forma directa, aunque tampoco profundizó en la diferencia entre voto blanco, voto viciado y abstención.",
+   "citas": [
+    {
+     "discurso": "P1",
+     "minuto": "0:28",
+     "texto": "millones votan en blanco o viciado"
+    },
+    {
+     "discurso": "P1",
+     "minuto": "0:37",
+     "texto": "Eso no es participación, es ruido"
+    },
+    {
+     "discurso": "O1",
+     "minuto": "0:36",
+     "texto": "el voto en blanco también es un mensaje"
+    }
+   ]
+  }
+ ],
+ "puntajes": [
+  {
+   "discurso": "P1",
+   "estilo": 28,
+   "contenido": 28,
+   "estrategia": 14,
+   "total": 70,
+   "fortalezas": "Presentó una postura clara, definió la propuesta concreta y anunció dos líneas argumentales. Su encuadre de libertad fue fácil de seguir: \"votar es un derecho\" (0:00).",
+   "a_mejorar": "Debió explicar mejor la carga de la prueba y desarrollar la conexión entre votos blancos o viciados y la conclusión de que el voto obligatorio debilita la democracia.",
+   "como_corregir": "Después de decir que los votos blancos o viciados son \"ruido\" (0:37), debió explicar por qué ese fenómeno es peor que una menor participación y responder anticipadamente que el voto blanco puede ser un mensaje político. También pudo justificar por qué los partidos efectivamente mejorarían sus propuestas sin obligación.",
+   "citas": [
+    {
+     "discurso": "P1",
+     "minuto": "0:11",
+     "texto": "Proponemos eliminar la multa y la obligación, manteniendo el registro automático de todos los ciudadanos"
+    },
+    {
+     "discurso": "P1",
+     "minuto": "0:51",
+     "texto": "¿La participación forzada fortalece, o debilita la democracia?"
+    }
+   ]
+  },
+  {
+   "discurso": "O1",
+   "estilo": 29,
+   "contenido": 29,
+   "estrategia": 14,
+   "total": 72,
+   "fortalezas": "Identificó rápidamente el principal riesgo distributivo y presentó un argumento comparativo con Chile. También respondió al tratamiento del voto blanco como \"ruido\".",
+   "a_mejorar": "La referencia a Chile fue demasiado breve y necesitaba explicar mejor por qué una caída de participación se traduce en peor representación y no solo en menor cantidad de votantes.",
+   "como_corregir": "Luego de mencionar que la participación cayó por debajo de la mitad (0:22), debió explicar el mecanismo completo: quiénes dejan de votar, cómo cambian los incentivos electorales y por qué eso afecta las políticas públicas. Además, pudo distinguir con mayor precisión entre deber cívico y sanción económica.",
+   "citas": [
+    {
+     "discurso": "O1",
+     "minuto": "0:07",
+     "texto": "olvida quién deja de votar cuando el voto es voluntario"
+    },
+    {
+     "discurso": "O1",
+     "minuto": "0:36",
+     "texto": "el voto en blanco también es un mensaje"
+    }
+   ]
+  },
+  {
+   "discurso": "P2",
+   "estilo": 27,
+   "contenido": 27,
+   "estrategia": 14,
+   "total": 68,
+   "fortalezas": "Desarrolló la extensión anunciada por P1 y presentó una cadena causal comprensible entre voto voluntario, competencia partidaria y construcción de bases.",
+   "a_mejorar": "La respuesta a la caída de participación fue especulativa y no enfrentó la objeción de que los partidos podrían movilizar solo a los grupos más favorecidos.",
+   "como_corregir": "Cuando afirmó que \"con el tiempo, la gente se acostumbraría a votar por convicción\" (0:21), debió explicar qué produciría esa adaptación, cuánto tiempo tomaría y cómo se protegería durante la transición a los sectores con menor participación. También debía responder a quiénes buscarían los partidos.",
+   "citas": [
+    {
+     "discurso": "P2",
+     "minuto": "0:00",
+     "texto": "los partidos tienen que salir a buscar votantes, hacer propuestas, y movilizar"
+    },
+    {
+     "discurso": "P2",
+     "minuto": "0:21",
+     "texto": "con el tiempo, la gente se acostumbraría a votar por convicción"
+    }
+   ]
+  },
+  {
+   "discurso": "O2",
+   "estilo": 29,
+   "contenido": 29,
+   "estrategia": 15,
+   "total": 73,
+   "fortalezas": "Hizo una refutación directa y formuló la pregunta estratégica más importante del debate: \"¿a cuáles?\". También comparó el pequeño costo individual con el beneficio representativo.",
+   "a_mejorar": "La evidencia sobre Estados Unidos y la afirmación sobre la dispensa de la multa fueron mencionadas sin suficiente explicación, y faltó responder con más detalle al argumento de legitimidad.",
+   "como_corregir": "Después de decir que las campañas movilizan a sus bases (0:12), debió explicar por qué ese patrón sería probable en el Perú y cómo afectaría a los grupos vulnerables. También podía conceder que existe una tensión con la libertad y explicar por qué, aun así, la igualdad política tiene prioridad.",
+   "citas": [
+    {
+     "discurso": "O2",
+     "minuto": "0:05",
+     "texto": "Sí, pero ¿a cuáles? A los que ya votan"
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:41",
+     "texto": "El costo para el individual es pequeño. El beneficio para la representación de los más pobres es enorme"
+    }
+   ]
+  },
+  {
+   "discurso": "P3",
+   "estilo": 27,
+   "contenido": 28,
+   "estrategia": 14,
+   "total": 69,
+   "fortalezas": "Organizó el cierre alrededor de dos choques explícitos y reconstruyó la tensión entre obligación, libertad y representación.",
+   "a_mejorar": "Afirmó que los pobres votan sin información y que el voto obligatorio produce fragmentación y desconfianza, pero no explicó ni probó esas conexiones. Tampoco respondió a la evidencia comparativa de Chile.",
+   "como_corregir": "En el primer choque, después de decir que los pobres ya están mal representados (0:13), debía comparar directamente los dos mundos: qué nivel de participación conservaría cada uno y por qué el mundo voluntario sería mejor. En el segundo, debía responder a la afirmación de que la baja multa puede ser un costo razonable para proteger la igualdad.",
+   "citas": [
+    {
+     "discurso": "P3",
+     "minuto": "0:13",
+     "texto": "los pobres ya están mal representados aunque voten"
+    },
+    {
+     "discurso": "P3",
+     "minuto": "0:39",
+     "texto": "si es simbólica, no justifica coaccionar a nadie"
+    }
+   ]
+  },
+  {
+   "discurso": "O3",
+   "estilo": 28,
+   "contenido": 28,
+   "estrategia": 14,
+   "total": 70,
+   "fortalezas": "Respondió a los dos choques planteados por P3 y resumió correctamente la principal debilidad de la Proposición: no mostró cómo el voto voluntario protegería a los grupos ya poco representados.",
+   "a_mejorar": "Introdujo la compra de votos como argumento nuevo en el tercer discurso, por lo que no debe recibir crédito sustantivo. Además, la comparación con deberes como el censo o el servicio de jurado necesitaba explicar mejor sus diferencias.",
+   "como_corregir": "En lugar de añadir la compra de votos en 0:26, debía usar ese tiempo para reconstruir la evidencia de Chile y explicar por qué el riesgo distributivo supera la ganancia de libertad. La compra de votos podía mencionarse solo si ya había sido planteada antes y si se conectaba con un choque existente.",
+   "citas": [
+    {
+     "discurso": "O3",
+     "minuto": "0:07",
+     "texto": "Su solución es que voten menos. Eso empeora el problema, no lo arregla"
+    },
+    {
+     "discurso": "O3",
+     "minuto": "0:26",
+     "texto": "Con voto voluntario crecería la compra de votos"
+    }
+   ]
+  },
+  {
+   "discurso": "OR",
+   "estilo": 15,
+   "contenido": 14,
+   "estrategia": 7,
+   "total": 36,
+   "fortalezas": "Priorizó correctamente el choque de representación y explicó la comparación central de la Oposición: menor participación de los pobres frente a un costo individual reducido.",
+   "a_mejorar": "La réplica describió la falta de respuesta de la Proposición, pero no comparó de manera suficientemente completa esa ventaja con el argumento de libertad.",
+   "como_corregir": "Después de afirmar que el debate se decidió en la representación (0:00), debía cerrar explícitamente los dos choques: explicar por qué la igualdad política pesa más que la libertad frente a una multa baja y por qué la hipótesis de que la gente se acostumbraría no supera la evidencia presentada.",
+   "citas": [
+    {
+     "discurso": "OR",
+     "minuto": "0:00",
+     "texto": "este debate se decidió en la representación"
+    },
+    {
+     "discurso": "OR",
+     "minuto": "0:20",
+     "texto": "sólo con la esperanza de que la gente se acostumbre"
+    }
+   ]
+  },
+  {
+   "discurso": "PR",
+   "estilo": 14,
+   "contenido": 14,
+   "estrategia": 7,
+   "total": 35,
+   "fortalezas": "Identificó correctamente que la Oposición añadió la compra de votos al final y defendió la tesis de que la inclusión no es solo hacer votar a las personas, sino conseguir representación efectiva.",
+   "a_mejorar": "La réplica no desarrolló una comparación choque por choque y calificó como argumento nuevo la compra de votos sin explicar que, aun descartándolo, la Proposición seguía necesitando responder la evidencia sobre participación de los pobres.",
+   "como_corregir": "Debía responder en dos pasos: primero, señalar que la compra de votos no recibe crédito por ser nueva; segundo, explicar por qué los argumentos ya debatidos —libertad y mejores incentivos partidarios— superan el riesgo de menor participación. La frase \"la inclusión real ocurre cuando los partidos tienen que ganarse el voto\" (0:07) necesitaba una comparación más concreta con el escenario de la Oposición.",
+   "citas": [
+    {
+     "discurso": "PR",
+     "minuto": "0:00",
+     "texto": "la oposición quiere que creamos que obligar es incluir"
+    },
+    {
+     "discurso": "PR",
+     "minuto": "0:20",
+     "texto": "su único argumento nuevo, la compra de votos, llegó en el tercer discurso"
+    }
+   ]
+  }
+ ],
+ "feedback_equipos": [
+  {
+   "bando": "Proposición",
+   "que_funciono": "El equipo tuvo un marco claro de libertad y presentó una propuesta concreta: eliminar la multa y la obligación, manteniendo el registro automático (P1, 0:11). También ofreció una ventaja institucional entendible: que los partidos tendrían que convencer y movilizar (P2, 0:00).",
+   "que_mejorar": "La principal debilidad fue no responder el mecanismo de exclusión planteado por O1 y O2. El equipo afirmó que los partidos buscarían votantes, pero no explicó por qué buscarían a los pobres, jóvenes y zonas rurales en vez de concentrarse en quienes ya participan.",
+   "como": "En la preparación, construyan una respuesta específica al caso de Chile y comparen ambos mundos. Por ejemplo, después de plantear que los partidos tendrían que convencer (P2, 0:00), expliquen qué incentivos impedirían que solo movilicen a sus bases. En P3 y PR, no se limiten a decir que el voto obligatorio no representa: demuestren por qué una menor participación no empeora la desigualdad política."
+  },
+  {
+   "bando": "Oposición",
+   "que_funciono": "El equipo identificó el choque más importante desde el inicio: quiénes dejarían de votar con un sistema voluntario (O1, 0:07). Además, O2 formuló una refutación directa al mecanismo de la Proposición y las réplicas mantuvieron el foco en representación e igualdad.",
+   "que_mejorar": "La evidencia comparativa fue útil, pero quedó poco desarrollada. El equipo también pudo responder mejor a la preocupación de que una multa, aunque baja, puede afectar la libertad o pesar más sobre quienes tienen menos recursos. O3 añadió la compra de votos tarde, sin que ese material pueda recibir crédito.",
+   "como": "Expliquen con más detalle la cadena causal de Chile: quiénes dejan de votar, cómo cambian los incentivos de los partidos y qué consecuencias tendría para las políticas. En O3, reserven el tiempo para reconstruir los argumentos ya debatidos en vez de introducir compra de votos en 0:26. Así el cierre sería más sólido y plenamente conforme con el rol."
+  }
+ ],
+ "ganador": "Oposición",
+ "ponderacion_final": "La decisión combina los choques siguiendo la prioridad explícita de los equipos. La Oposición dijo que el debate se decidía en la representación (OR, 0:00), mientras que la Proposición presentó como centro la libertad y la legitimidad (P1, 0:51). En el choque de mayor peso, Oposición mostró un riesgo concreto y comparativo: la participación voluntaria podría reducir especialmente el voto de los sectores pobres y rurales. La Proposición ofreció dos respuestas —que los pobres ya están mal representados y que los partidos tendrían que convencer—, pero no demostró que esas respuestas superen el riesgo de exclusión. Proposición gana estrechamente el choque normativo sobre libertad, pero Oposición gana representación y los incentivos partidarios, ambos conectados con un impacto colectivo mayor. El argumento de compra de votos de O3 no recibe crédito sustantivo por ser material nuevo en el tercer discurso.",
+ "lectura_principal": {
+  "ganador": "Oposición",
+  "argumento": "Un juez razonable puede votar por Oposición porque la igualdad política y la representación de los grupos vulnerables son la carga comparativa central de la moción. La Proposición mostró una preocupación válida sobre la libertad, pero no respondió suficientemente qué ocurriría si el voto voluntario reduce sobre todo la participación de quienes ya tienen menos influencia. Por eso, aunque el margen no es amplio, el riesgo de una democracia menos igualitaria supera la ventaja de eliminar una obligación de bajo costo según lo presentado por Oposición."
+ },
+ "lectura_alternativa": {
+  "ganador": "Proposición",
+  "argumento": "La mejor defensa de Proposición sería votar por libertad y legitimidad: una democracia no debería forzar a las personas a expresar una preferencia bajo amenaza de multa, y la obligación no garantiza representación sustantiva si las personas votan sin información o en blanco. Un juez podría considerar que el ejemplo de Chile fue demasiado breve, que Oposición no probó que el voto obligatorio mejore realmente las decisiones políticas y que los partidos tendrían mejores incentivos para convencer en un sistema voluntario. Bajo esa lectura, la libertad de no participar y la calidad del consentimiento electoral podrían pesar más que una caída de participación que Oposición solo afirmó de manera resumida."
+ },
+ "confianza": "alta",
+ "advertencias": [
+  "El juicio se basa únicamente en la transcripción. No es posible evaluar gestos, contacto visual, lenguaje corporal ni otros elementos visuales.",
+  "Las referencias a Chile, Estados Unidos, la proporción de votos blancos o viciados y la dispensa de multas fueron evaluadas como material presentado por los equipos; no se verificaron externamente.",
+  "La evidencia sobre Chile fue mencionada, pero no se desarrollaron sus datos, causas o límites. Por eso se le otorgó peso, aunque no un margen contundente.",
+  "La afirmación sobre compra de votos de O3, en 0:26, es material nuevo importante en el tercer discurso. La respuesta de PR puede señalar la infracción, pero ese argumento no recibe crédito para decidir el choque.",
+  "El puntaje de estilo se limita a la claridad y persuasión apreciables en la transcripción; no incorpora aspectos de voz que no estén reflejados en el texto."
+ ]
+}

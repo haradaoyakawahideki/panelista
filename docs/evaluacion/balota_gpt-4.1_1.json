@@ -1,0 +1,233 @@
+{
+ "resumen": "El debate giró en torno a si eliminar el voto obligatorio fortalecía o debilitaba la democracia en el Perú. Proposición defendió la libertad de votar y la mejora en la legitimidad, mientras que la Oposición sostuvo que el voto obligatorio protege la igualdad política, sobre todo de los más pobres, apoyándose en el caso chileno. El choque central fue quién está mejor representado y la profundidad de la legitimidad democrática bajo cada sistema.",
+ "choques": [
+  {
+   "titulo": "¿El voto obligatorio fortalece o debilita la representación política de los sectores más vulnerables?",
+   "proposicion": "Obligar a votar no es inclusión real, pues los pobres siguen mal representados y votan desinformados o forzados (P3 0:07-0:19). El voto voluntario lleva a partidos a buscar y convencer, creando representación genuina (P2 0:00-0:13).",
+   "oposicion": "El voto voluntario reduce más la participación de pobres, jóvenes y rurales, como pasó en Chile (O1 0:07-0:28, O2 0:00-0:19, OR 0:07-0:14). Sin voto obligatorio, los políticos ignoran a quienes no votan.",
+   "tipo": "caracterización",
+   "ganador": "Oposición",
+   "por_que": "Oposición trae evidencia empírica (Chile tras 2012) de caída desigual de participación, explica el mecanismo por el que los partidos dejarían fuera a los vulnerables, y Proposición no refuta directamente la evidencia ni presenta ejemplos opuestos. El argumento de 'representación genuina' de Proposición queda débil ante el riesgo comparado de exclusión.",
+   "margen": "claro",
+   "peso": "alto",
+   "por_que_peso": "La representación es el argumento central de ambas bancadas y determina quién realmente se beneficia o pierde bajo el sistema propuesto.",
+   "citas": [
+    {
+     "discurso": "O1",
+     "minuto": "0:15",
+     "texto": "En países con voto voluntario, como Chile después de 2012, la participación cayó por debajo de la mitad. Y cayó más en las comunas pobres."
+    },
+    {
+     "discurso": "P3",
+     "minuto": "0:13",
+     "texto": "los pobres ya están mal representados aunque voten. Votan obligados, y sin información."
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:12",
+     "texto": "En Estados Unidos, las campañas gastan millones en movilizar solo a sus bases."
+    },
+    {
+     "discurso": "P2",
+     "minuto": "0:00",
+     "texto": "Cuando el voto es voluntario, los partidos tienen que salir a buscar votantes, hacer propuestas, y movilizar."
+    }
+   ]
+  },
+  {
+   "titulo": "¿La legitimidad democrática mejora al eliminar el voto obligatorio?",
+   "proposicion": "El voto forzado genera 'ruido', no participación libre (P1 0:28-0:37). La legitimidad sería mayor si los votos fueran por convicción y no por miedo a la multa (P1 0:23-0:32, P3 0:32-0:39).",
+   "oposicion": "El voto en blanco o nulo también es un mensaje válido cuando todos participan (O1 0:36-0:42). La obligación es un deber cívico comparable a pagar impuestos o ser jurado (O2 0:31-0:36, O3 0:20-0:26), y su costo es pequeño frente al beneficio social (O2 0:36-0:41).",
+   "tipo": "explícito",
+   "ganador": "Oposición",
+   "por_que": "Proposición caracteriza bien la preocupación, pero Oposición responde plausiblemente (el voto en blanco también comunica) y sostiene que el deber cívico, de bajo costo, se justifica por sus beneficios colectivos. Además, Proposición no prueba que la legitimidad democrática efectiva sea mayor bajando la participación.",
+   "margen": "estrecho",
+   "peso": "medio",
+   "por_que_peso": "Es importante por el valor de la libertad y la legitimidad, pero ambos equipos lo subordinan a la representación y efectos prácticos.",
+   "citas": [
+    {
+     "discurso": "P1",
+     "minuto": "0:28",
+     "texto": "En 2021, fueron casi dos de cada diez votos en la primera vuelta. Eso no es participación, es ruido."
+    },
+    {
+     "discurso": "O1",
+     "minuto": "0:36",
+     "texto": "El voto en blanco también es un mensaje, y sólo existe porque todos están en la mesa."
+    },
+    {
+     "discurso": "O2",
+     "minuto": "0:31",
+     "texto": "Vivir en democracia tiene costos mínimos. Votar una vez cada cierto tiempo es uno de ellos."
+    }
+   ]
+  }
+ ],
+ "puntajes": [
+  {
+   "discurso": "P1",
+   "estilo": 28,
+   "contenido": 28,
+   "estrategia": 14,
+   "total": 70,
+   "fortalezas": "Explicación clara de los argumentos, identifica el choque principal y contextualiza el problema central ('la legitimidad').",
+   "a_mejorar": "Mayor desarrollo de impactos comparativos y anticipar mejor los argumentos de Oposición.",
+   "como_corregir": "En 0:56, pudo profundizar cómo 'debilita la democracia' con ejemplos o proyecciones de efectos, preparando respuesta al caso chileno.",
+   "citas": [
+    {
+     "discurso": "P1",
+     "minuto": "0:49",
+     "texto": "Que quede claro el choque. ¿La participación forzada fortalece, o debilita la democracia? Nosotros decimos que la debilita."
+    }
+   ]
+  },
+  {
+   "discurso": "O1",
+   "estilo": 28,
+   "contenido": 29,
+   "estrategia": 14,
+   "total": 71,
+   "fortalezas": "Trae evidencia comparada relevante (Chile), coloca bien el impacto de desigualdad en la representación.",
+   "a_mejorar": "Mayor respuesta al argumento ético de la libertad.",
+   "como_corregir": "Al referirse al voto en blanco como mensaje (0:42), podía reforzar más la idea de representación forzada pero legítima, conectando con la inclusión.",
+   "citas": [
+    {
+     "discurso": "O1",
+     "minuto": "0:15",
+     "texto": "En países con voto voluntario, como Chile después de 2012, la participación cayó por debajo de la mitad."
+    }
+   ]
+  },
+  {
+   "discurso": "P2",
+   "estilo": 27,
+   "contenido": 27,
+   "estrategia": 13,
+   "total": 67,
+   "fortalezas": "Despliega el segundo argumento y responde a la desventaja de la menor participación.",
+   "a_mejorar": "No responde ni refuta con evidencia el caso chileno traído por Oposición.",
+   "como_corregir": "Debió en 0:21 presentar algún ejemplo o evidencia de casos donde el voto voluntario no haya generado exclusión y decir por qué Perú sería distinto.",
+   "citas": [
+    {
+     "discurso": "P2",
+     "minuto": "0:13",
+     "texto": "El voto voluntario, premia a los partidos que construyen bases."
+    }
+   ]
+  },
+  {
+   "discurso": "O2",
+   "estilo": 27,
+   "contenido": 29,
+   "estrategia": 14,
+   "total": 70,
+   "fortalezas": "Refuta directamente los argumentos de Proposición y reitera los riesgos sobre los sectores más débiles.",
+   "a_mejorar": "Profundizar en la implicancia de la exclusión, no sólo constatar el fenómeno.",
+   "como_corregir": "En 0:24, agregó 'sin evidencia'; podía contrastar casos con datos adicionales o conclusiones sobre lo que ocurre a países tras eliminar la obligación.",
+   "citas": [
+    {
+     "discurso": "O2",
+     "minuto": "0:19",
+     "texto": "Y no respondió a nuestro argumento de Chile. Solo dijo que con el tiempo la gente se acostumbraría. Sin ninguna evidencia."
+    }
+   ]
+  },
+  {
+   "discurso": "P3",
+   "estilo": 28,
+   "contenido": 27,
+   "estrategia": 13,
+   "total": 68,
+   "fortalezas": "Identifica los choques y mantiene coherencia con la línea del caso.",
+   "a_mejorar": "No compara ni pondera evidencia frente al caso chileno; faltó profundidad en la comparación de modelos.",
+   "como_corregir": "En 0:13-0:19, pudo analizar si la falta de representación real con voto obligatorio es peor que no votar con voluntario, sustentando con ejemplos o impactos.",
+   "citas": [
+    {
+     "discurso": "P3",
+     "minuto": "0:13",
+     "texto": "los pobres ya están mal representados aunque voten. Votan obligados, y sin información."
+    }
+   ]
+  },
+  {
+   "discurso": "O3",
+   "estilo": 28,
+   "contenido": 29,
+   "estrategia": 14,
+   "total": 71,
+   "fortalezas": "Destaca los puntos omitidos por Proposición y refuerza la importancia de la representación vulnerable.",
+   "a_mejorar": "Material nuevo (compra de votos) en tercer discurso que Proposición señala lealmente que no podía responder.",
+   "como_corregir": "En 0:26-0:32, debió sólo reforzar puntos ya puestos, y no añadir 'la compra de votos', que ya no recibe crédito.",
+   "citas": [
+    {
+     "discurso": "O3",
+     "minuto": "0:26",
+     "texto": "Con voto voluntario crecería la compra de votos, porque sería más barato pagar a alguien para que vaya a votar que convencerlo."
+    }
+   ]
+  },
+  {
+   "discurso": "OR",
+   "estilo": 15,
+   "contenido": 15,
+   "estrategia": 8,
+   "total": 38,
+   "fortalezas": "Resume bien el choque de representación; refuerza la falta de respuesta con evidencia en Proposición.",
+   "a_mejorar": "Podía ponderar la legitimidad con más profundidad.",
+   "como_corregir": "En 0:20-0:27, podía hacer comparativa más explícita en libertad versus representación.",
+   "citas": [
+    {
+     "discurso": "OR",
+     "minuto": "0:07",
+     "texto": "mostramos, con el caso de Chile, que el voto voluntario hace que voten menos los pobres."
+    }
+   ]
+  },
+  {
+   "discurso": "PR",
+   "estilo": 14,
+   "contenido": 14,
+   "estrategia": 7,
+   "total": 35,
+   "fortalezas": "Integra bien los choques expuestos y resalta el argumento del voto como práctica libre.",
+   "a_mejorar": "No propone una narrativa poderosa para contrarrestar la evidencia que trae Oposición.",
+   "como_corregir": "En 0:00-0:25, podía reconocer el argumento de Chile y explicar por qué no sería igual en Perú, si existía dentro de su caso.",
+   "citas": [
+    {
+     "discurso": "PR",
+     "minuto": "0:02",
+     "texto": "Obligar es incluir. Mostramos que la inclusión real ocurre cuando los partidos tienen que ganarse el voto"
+    }
+   ]
+  }
+ ],
+ "feedback_equipos": [
+  {
+   "bando": "Proposición",
+   "que_funciono": "Lograron construir un caso coherente respecto a la importancia de la libertad y la legitimidad del voto, y sostuvieron de forma consistente que la obligación genera participación vacía o artificial.",
+   "que_mejorar": "No lograron refutar la evidencia ni los impactos comparativos que trajo Oposición sobre la exclusión y el caso chileno, ni produjeron ejemplos o datos que contrasten. Les faltó demostrar por qué su modelo sería mejor específicamente para los sectores vulnerables.",
+   "como": "En futuras rondas, procuren tener ejemplos internacionales que respalden sus argumentos o expliquen los mecanismos por los cuales el Perú sería distinto. Anticipen la evidencia contraria y den comparativas claras, especialmente cuando se cuestiona el impacto sobre los más desfavorecidos."
+  },
+  {
+   "bando": "Oposición",
+   "que_funciono": "Pusieron en el centro el tema de la representación y los efectos en sectores pobres y rurales, logrando evidencia relevante y respuestas directas a los argumentos de Proposición. Hubo buena coherencia narrativa y priorización.",
+   "que_mejorar": "En el tercer discurso se presentó material nuevo (compra de votos) cuando ya no correspondía, y la respuesta al punto de la libertad pudo ser más profunda y sistemática.",
+   "como": "Eviten traer argumentos nuevos en el tercer discurso, y en futuras rondas, anticipen la lógica de derechos y libertades para mostrar de forma más explícita por qué los deberes cívicos son acordes a la democracia."
+  }
+ ],
+ "ganador": "Oposición",
+ "ponderacion_final": "El primer choque, representación de los sectores vulnerables, tiene peso central porque es donde se juega el mayor impacto colectivo según ambas casas, y la Oposición sustenta mejor con evidencia y causalidad. El choque de legitimidad democrática es relevante pero secundario, y Oposición logra comunicar que el costo individual es bajo frente a sus beneficios. La suma narrativa y la no refutación de la evidencia clave inclinan el debate en margen claro para Oposición.",
+ "lectura_principal": {
+  "ganador": "Oposición",
+  "argumento": "Oposición logra probar que eliminar el voto obligatorio reduce desproporcionadamente la representación política de los sectores pobres y rurales, usando el caso chileno de manera directa y no refutada. Proposición no demuestra que su modelo realmente mejore la calidad democrática o la inclusión, lo que lleva a preferir el sistema actual para evitar un retroceso en igualdad política."
+ },
+ "lectura_alternativa": {
+  "ganador": "Proposición",
+  "argumento": "Un juez podría considerar que la representación actual ya es deficiente, incluso con voto obligatorio, pues el voto forzado no equivale a verdadera inclusión. Si este criterio prima, podría considerarse que el cambio a voto voluntario pone presión en los partidos para construir representación real, lo que sería una mejora a largo plazo. Pero esto requiere asumir que el argumento de la costumbre ciudadana y el despertar cívico de Proposición es plausible pese a falta de evidencia."
+ },
+ "confianza": "alta",
+ "advertencias": [
+  "La evaluación de estilo no incluye factores visuales como lenguaje corporal ni contacto visual, pues solo se cuenta el audio.",
+  "El argumento sobre la compra de votos en O3 no recibió crédito porque fue presentado en tercer discurso y Proposición señala que ya no podía responder."
+ ]
+}
