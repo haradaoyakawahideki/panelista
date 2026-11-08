@@ -1,19 +1,20 @@
 """Speech to text with Whisper (session 13).
 
-Phone recordings get compressed to 16 kHz mono MP3. Anything still over the
-API's 25 MB limit gets split into 20-minute pieces. Each segment keeps its
-timestamps.
+Phone recordings get compressed to 16 kHz mono MP3, cut into 5-minute pieces
+and transcribed in parallel (an 80-minute debate takes about 2 minutes instead
+of 24). Each segment keeps its timestamps. Repeated lines, which Whisper invents
+during music or silence, are dropped.
 """
-import json
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 import tempfile
 from pathlib import Path
 from typing import List
 
 from openai import OpenAI
 
-MAX_BYTES = 24 * 1024 * 1024
-CHUNK_SECONDS = 20 * 60
+CHUNK_SECONDS = 5 * 60
+WORKERS = 8
 MODEL = "whisper-1"  # the model that returns timestamped segments
 PROMPT = (
     "Debate escolar en formato WSDC. Señora presidenta, honorables jueces, "
@@ -36,25 +37,29 @@ def _split(src: Path, folder: Path) -> List[Path]:
     return sorted(folder.glob("part*.mp3"))
 
 
+def _one(client: OpenAI, offset: float, piece: Path) -> List[dict]:
+    with open(piece, "rb") as f:
+        r = client.audio.transcriptions.create(
+            model=MODEL, file=f, language="es", prompt=PROMPT,
+            response_format="verbose_json", timestamp_granularities=["segment"],
+        )
+    return [{"start": x.start + offset, "end": x.end + offset, "text": x.text.strip()}
+            for x in (r.segments or []) if getattr(x, "no_speech_prob", 0) < 0.8]
+
+
 def transcribe(client: OpenAI, audio: Path) -> List[dict]:
     """Return [{start, end, text}] with times in seconds from the start of the file."""
-    audio = Path(audio)
     tmp = Path(tempfile.mkdtemp())
-    small = _compress(audio, tmp / "full.mp3")
-    pieces = [(0.0, small)]
-    if small.stat().st_size > MAX_BYTES:
-        pieces = [(i * CHUNK_SECONDS, p) for i, p in enumerate(_split(small, tmp))]
-    segments = []
-    for offset, piece in pieces:
-        with open(piece, "rb") as f:
-            r = client.audio.transcriptions.create(
-                model=MODEL, file=f, language="es", prompt=PROMPT,
-                response_format="verbose_json", timestamp_granularities=["segment"],
-            )
-        for s in r.segments or []:
-            segments.append({"start": s.start + offset, "end": s.end + offset, "text": s.text.strip()})
+    small = _compress(Path(audio), tmp / "full.mp3")
+    pieces = [(i * CHUNK_SECONDS, p) for i, p in enumerate(_split(small, tmp))]
+    with ThreadPoolExecutor(WORKERS) as ex:
+        parts = list(ex.map(lambda a: _one(client, *a), pieces))
+    segments, last = [], None
+    for seg in (x for part in parts for x in part):
+        if seg["text"] and seg["text"] != last:  # drop repeated lines
+            segments.append(seg)
+        last = seg["text"]
     return segments
-
 
 def mmss(seconds: float) -> str:
     return f"{int(seconds // 60)}:{int(seconds % 60):02d}"
