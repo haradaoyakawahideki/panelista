@@ -13,7 +13,7 @@ from .schemas import Balota, Segmentacion
 from .transcribe import as_text
 from .wsdc import RUBRIC, SPEECHES, SPEECH_IDS
 
-MODEL = os.getenv("PANELISTA_MODEL", "gpt-4.1")
+MODEL = os.getenv("PANELISTA_MODEL", "gpt-5.6-luna")
 
 SYSTEM = f"""Eres un juez experimentado de debate escolar en el Perú que
 ayuda a docentes que recién aprenden a juzgar. Juzgas solo con lo que dice
