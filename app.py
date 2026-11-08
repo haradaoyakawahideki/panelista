@@ -1,5 +1,6 @@
 """Panelista: an AI judging assistant for school debate in WSDC format (beta)."""
 import hashlib
+import json
 import os
 import tempfile
 from datetime import datetime
@@ -10,6 +11,7 @@ from openai import OpenAI
 
 from panelista import store
 from panelista.judge import MODEL, judge, segment
+from panelista.schemas import Balota
 from panelista.transcribe import as_text, transcribe
 from panelista.wsdc import SPEECHES, SPEECH_IDS
 
@@ -117,13 +119,43 @@ else:
     st.caption("Panelista detecta dónde empieza cada discurso. Revisa el corte en el resultado.")
 
 
-def transcribe_bytes(client, data: bytes):
-    h = hashlib.sha1(data).hexdigest()
+def sha1(data: bytes) -> str:
+    return hashlib.sha1(data).hexdigest()
+
+
+def cached_transcript(data: bytes):
+    """Session first, then disk, so a refresh or restart doesn't pay again."""
+    h = sha1(data)
     if h not in ss["transcripts"]:
+        hit = store.cache_get("transcripts", h)
+        if hit is not None:
+            ss["transcripts"][h] = hit
+    return ss["transcripts"].get(h)
+
+
+def transcribe_bytes(client, data: bytes):
+    segs = cached_transcript(data)
+    if segs is None:
         with tempfile.NamedTemporaryFile(suffix=".audio", delete=False) as f:
             f.write(data)
-        ss["transcripts"][h] = transcribe(client, Path(f.name))
-    return ss["transcripts"][h]
+        segs = transcribe(client, Path(f.name))
+        store.cache_put("transcripts", sha1(data), segs)
+        ss["transcripts"][sha1(data)] = segs
+    return segs
+
+
+@st.cache_resource
+def seed_demo_cache():
+    """The demo's transcripts are already in the repo: reuse them instead of calling Whisper."""
+    p = ROOT / "docs" / "evaluacion" / "demo_transcripts.json"
+    if p.exists():
+        for sid, segs in json.loads(p.read_text()).items():
+            f = DEMO / f"{sid}.mp3"
+            if f.exists() and store.cache_get("transcripts", sha1(f.read_bytes())) is None:
+                store.cache_put("transcripts", sha1(f.read_bytes()), segs)
+
+
+seed_demo_cache()
 
 
 # ---------- 3. judge ----------
@@ -144,9 +176,17 @@ if st.button("Juzgar el debate", type="primary", disabled=not ready or left <= 0
             for s in SPEECHES:
                 st.write(f"Transcribiendo {s['id']} · {names.get(s['id']) or s['rol']}…")
                 speeches[s["id"]] = transcribe_bytes(client, ss["audios"][s["id"]])
-        st.write("Identificando choques y puntajes…")
-        ballot = judge(client, motion, names, speeches)
-        store.register_use(school)
+        # same audio + same ballot + same model = same debate: reuse it, don't charge a debate
+        key = sha1(json.dumps([MODEL, motion, names, speeches], ensure_ascii=False, sort_keys=True).encode())
+        hit = store.cache_get("ballots", key)
+        if hit is not None:
+            st.write("Este debate ya fue juzgado: mostrando el resultado guardado (no descuenta del límite).")
+            ballot = Balota.model_validate(hit)
+        else:
+            st.write("Identificando choques y puntajes…")
+            ballot = judge(client, motion, names, speeches)
+            store.cache_put("ballots", key, ballot.model_dump())
+            store.register_use(school)
         ss["result"] = {"ballot": ballot, "speeches": speeches, "names": dict(names), "motion": motion}
         status.update(label="Listo", state="complete")
 

@@ -34,3 +34,17 @@ def save_correction(record: dict) -> None:
     DATA.mkdir(exist_ok=True)
     with open(DATA / "corrections.jsonl", "a") as f:
         f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+
+# ---------- cache: never pay twice for the same audio or the same debate ----------
+CACHE = DATA / "cache"
+
+
+def cache_get(kind: str, key: str):
+    p = CACHE / kind / f"{key}.json"
+    return json.loads(p.read_text()) if p.exists() else None
+
+
+def cache_put(kind: str, key: str, value) -> None:
+    (CACHE / kind).mkdir(parents=True, exist_ok=True)
+    (CACHE / kind / f"{key}.json").write_text(json.dumps(value, ensure_ascii=False))
