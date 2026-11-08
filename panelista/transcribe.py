@@ -21,21 +21,19 @@ PROMPT = (
 )
 
 
-def duration(path: Path) -> float:
-    out = subprocess.run(
-        ["ffprobe", "-v", "quiet", "-print_format", "json", "-show_format", str(path)],
-        capture_output=True, text=True, check=True,
-    )
-    return float(json.loads(out.stdout)["format"]["duration"])
-
-
-def _compress(src: Path, dst: Path, start: float = 0, length: float = None) -> Path:
-    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-ss", str(start), "-i", str(src)]
-    if length:
-        cmd += ["-t", str(length)]
-    cmd += ["-ac", "1", "-ar", "16000", "-b:a", "32k", str(dst)]
+def _compress(src: Path, dst: Path) -> Path:
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(src),
+           "-vn", "-ac", "1", "-ar", "16000", "-b:a", "32k", str(dst)]
     subprocess.run(cmd, check=True)
     return dst
+
+
+def _split(src: Path, folder: Path) -> List[Path]:
+    """Cut into CHUNK_SECONDS pieces (part000.mp3, part001.mp3, ...)."""
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-f", "segment",
+                    "-segment_time", str(CHUNK_SECONDS), "-c", "copy", str(folder / "part%03d.mp3")],
+                   check=True)
+    return sorted(folder.glob("part*.mp3"))
 
 
 def transcribe(client: OpenAI, audio: Path) -> List[dict]:
@@ -45,11 +43,7 @@ def transcribe(client: OpenAI, audio: Path) -> List[dict]:
     small = _compress(audio, tmp / "full.mp3")
     pieces = [(0.0, small)]
     if small.stat().st_size > MAX_BYTES:
-        total = duration(small)
-        pieces = [
-            (t, _compress(audio, tmp / f"part{i}.mp3", t, CHUNK_SECONDS))
-            for i, t in enumerate(range(0, int(total) + 1, CHUNK_SECONDS))
-        ]
+        pieces = [(i * CHUNK_SECONDS, p) for i, p in enumerate(_split(small, tmp))]
     segments = []
     for offset, piece in pieces:
         with open(piece, "rb") as f:

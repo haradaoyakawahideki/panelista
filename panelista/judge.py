@@ -25,11 +25,14 @@ dilo en las advertencias. Escribe en español claro, para un docente.
 {RUBRIC}
 
 Reglas de salida:
+- Primero resuelve los choques y pondéralos; recién después asigna puntajes.
 - Identifica de 2 a 4 choques, ordenados por peso.
-- Un puntaje por discurso, con estilo + contenido + estrategia = total y
-  dentro de los rangos del formato.
+- Un puntaje por discurso (los 8), con estilo + contenido + estrategia = total
+  y dentro de la tabla.
 - La suma de puntos del ganador debe ser mayor que la del perdedor.
+- Feedback para los dos equipos, con espacio de mejora también para el ganador.
 - La lectura alternativa es la mejor defensa honesta del otro resultado.
+- Tono: formativo, para escolares y su docente.
 """
 
 

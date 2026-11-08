@@ -1,7 +1,14 @@
-"""WSDC format rules: the fixed speech order and the scoring rubric."""
+"""WSDC format rules: the fixed speech order and the judging criteria.
 
-# WSDC speech order: 3 constructive speeches per side, alternating, then
-# the replies (opposition first). Each reply is given by the 1st or 2nd speaker.
+Sources (summarized and paraphrased, never copied in full):
+- LPDE, "Manual de iniciación al debate en el formato WSDC" (2020): roles,
+  speaker-point table and judging rules.
+- MED Chile 2025, "Taller de Jueceo" (YouTube, w66nAWBVHss): judging by
+  clashes, how to weigh them and pedagogical feedback for school students.
+"""
+
+# WSDC speech order: 3 constructive speeches per side (8 min), alternating, then
+# the replies (4 min, opposition first), given by the 1st or 2nd speaker.
 SPEECHES = [
     {"id": "P1", "rol": "1.er orador de Proposición", "bando": "Proposición", "tipo": "constructivo"},
     {"id": "O1", "rol": "1.er orador de Oposición", "bando": "Oposición", "tipo": "constructivo"},
@@ -15,31 +22,78 @@ SPEECHES = [
 SPEECH_IDS = [s["id"] for s in SPEECHES]
 
 RUBRIC = """
-Formato WSDC (World Schools Debating Championships).
-
-Puntaje de cada discurso constructivo: 60 a 80 puntos.
-  - Estilo 40 % (24-32): claridad, ritmo, contacto, uso del lenguaje.
-  - Contenido 40 % (24-32): calidad de los argumentos y de la evidencia,
-    análisis, refutación; se juzga como si lo leyera un lector razonable.
-  - Estrategia 20 % (12-16): estructura, manejo del tiempo, comprensión del
-    rol, identificación de los choques importantes, respuesta a los POIs.
-Puntaje de réplica: 30 a 40 puntos (la mitad de la escala): Estilo 12-16,
-Contenido 12-16, Estrategia 6-8.
-
-Escala orientativa de un discurso constructivo:
-  60-63 débil, 64-67 por debajo del promedio, 68-72 promedio (70 = promedio
-  de un torneo escolar), 73-76 muy bueno, 77-80 excepcional.
-
+FORMATO WSDC (según el manual de la Liga Peruana de Debate Escolar)
+- Contenido: fuerza de la argumentación, incluida la calidad de la refutación.
+- Estilo: capacidad de explicar de forma persuasiva (voz, retórica). Con solo
+  audio NO puedes evaluar gestos ni contacto visual: dilo en las advertencias.
+- Estrategia: estructura, manejo del tiempo, prioridades, comprensión de los
+  temas clave, cumplimiento del rol y trabajo en equipo.
 Roles:
-  - 1.er orador: define la moción, presenta el modelo o la postura y el
-    reparto de argumentos del equipo. El 1.º de Oposición además refuta.
-  - 2.º orador: refuta y desarrolla argumentos nuevos de su equipo.
-  - 3.er orador: refuta y reconstruye; organiza el debate en choques.
-    No debe introducir argumentos nuevos importantes.
-  - Réplica: resumen sesgado del debate, choque por choque, explicando por
-    qué ganó su equipo. No puede traer argumentos nuevos.
+- 1.º Proposición: define, anuncia la carga de la prueba, caracteriza a los
+  actores, presenta el caso y el reparto, y desarrolla al menos un argumento.
+- 1.º Oposición: puede impugnar la definición (solo aquí), presenta su caso,
+  refuta a P1 y desarrolla al menos un argumento.
+- 2.os oradores: refutan, reconstruyen y traen argumentos nuevos.
+- 3.os oradores: refutan, reconstruyen y resumen. No traen material nuevo
+  importante.
+- Réplicas (1.º o 2.º orador, primero Oposición): explican los puntos de choque
+  y por qué gana su casa. Sin argumentos nuevos.
 
-Cómo se decide: el juez decide qué equipo fue más persuasivo en conjunto,
-evaluando los choques centrales del debate y cuánto pesa cada uno. El
-equipo ganador debe tener la suma de puntos más alta (no hay empates).
+TABLA DE PUNTAJES (discursos principales, /100; en la práctica 60-80)
+  80 excepcional (C32 E32 Es16) · 76-79 excelente (31/31/15-16) ·
+  74-75 extremadamente bueno (30/30/15) · 71-73 muy bueno (29/29/14-15) ·
+  70 bueno (28/28/14) · 67-69 satisfactorio (27/27/13-14) ·
+  65-66 competente (26/26/13) · 61-64 aceptable (25/25/12-13) ·
+  60 mejora necesaria (24/24/12)
+RÉPLICAS (/50; en la práctica 30-40): 40 excelente (16/16/8) ·
+  36-39 muy bueno a excelente (15/15/7-8) · 35 bueno (14/14/7) ·
+  31-34 aceptable a satisfactorio (13/13/6-7) · 30 mejora necesaria (12/12/6)
+Usa números enteros. Un torneo escolar promedio ronda los 70.
+
+CÓMO DECIDIR (taller de jueceo del MED Chile 2025)
+1. Juzga por puntos de choque y cargas de la prueba, NO discurso por discurso:
+   juzgar por discursos sobrepremia a los últimos o a los que suenan mejor y
+   olvida las réplicas, los segundos oradores y la refutación.
+2. No cuentes argumentos: importa lo que queda en pie después de la interacción.
+3. Tipos de choque: explícito (A contra no-A), de caracterización (el mismo
+   fenómeno descrito distinto), de criterio (marcos distintos, p. ej. bienestar
+   contra derechos) e implícito (no se nombra, pero se construye en el material).
+4. Resuelve cada choque: (a) la contribución inicial de cada lado en una frase;
+   (b) plausibilidad y contexto para una votante promedio informada;
+   (c) respuestas directas y específicas; (d) reconstrucción o
+   contrarrefutación; (e) qué material es más sólido y resistió mejor.
+5. Una refutación gana crédito solo si se involucra con la lógica del
+   argumento, lo vuelve menos persuasivo y es plausible Y explicada. "Eso no es
+   verdad" sin explicación no gana.
+6. Pondera los choques por: centralidad para la moción; profundidad y magnitud
+   del impacto (cuántos, cuánto, con qué certeza); fuerza narrativa acumulativa
+   (si los choques ganados forman un mundo coherente); y margen de victoria
+   (por refutación contundente o por matiz). Los ejemplos sustentan, pero no
+   ganan choques.
+7. Para ponderar usa, en orden: la ponderación explícita de los equipos, luego
+   la implícita, y solo si no hay ninguna, una inferencia razonable tuya. Explica
+   siempre por qué.
+8. Usa los terceros discursos y las réplicas para ver qué consideran
+   importante los equipos.
+
+REGLAS DEL JUEZ (manual LPDE)
+- Juzga como una persona razonable promedio, con conocimiento general y algo
+  informada de la actualidad. No uses conocimiento especializado.
+- Juzga el debate que ocurrió, no el que querías. No completes argumentos por
+  los equipos aunque te parezcan intuitivos. No descartes argumentos porque no
+  te gusten.
+- Juzga equipos, no individuos. No hay "perdedores automáticos": nada aislado
+  decide el debate.
+- El material nuevo en un 3.er discurso o en una réplica no recibe crédito:
+  dilo y explica por qué.
+
+FEEDBACK PEDAGÓGICO (escolares)
+- Muestra espacio de mejora para el equipo que gana Y para el que pierde. El
+  error se puede corregir: evita que el equipo que pierde se sienta culpable.
+- Explica por qué algo se ponderó o se descartó, no solo que se hizo.
+- Para cada error, explica cómo se pudo corregir y señala el momento concreto
+  del discurso.
+- Adapta el consejo al rol: 1.os oradores en encuadre y caracterización;
+  2.os en extensión y refutación; 3.os en comparativas y refutación; réplicas
+  en el resumen choque por choque.
 """.strip()

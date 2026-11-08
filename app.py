@@ -60,7 +60,7 @@ with st.sidebar:
     left = store.remaining(school)
     st.metric("Debates disponibles este mes", f"{left} / {store.LIMIT}")
     st.divider()
-    if st.button("Cargar debate de demostración", use_container_width=True):
+    if st.button("Cargar debate de demostración", width="stretch"):
         names = {}
         for line in (DEMO / "oradores.txt").read_text().splitlines():
             if ":" in line:
@@ -131,7 +131,7 @@ st.subheader("3 · Juzgar")
 ready = bool(full_audio) or len(ss["audios"]) == len(SPEECH_IDS)
 if not ready and mode == "Grabar o subir cada discurso":
     st.info(f"Faltan {len(SPEECH_IDS) - len(ss['audios'])} discursos.")
-if st.button("Juzgar el debate", type="primary", disabled=not ready or left <= 0, use_container_width=True):
+if st.button("Juzgar el debate", type="primary", disabled=not ready or left <= 0, width="stretch"):
     client = get_client()
     with st.status("Panelista está juzgando…", expanded=True) as status:
         if full_audio:
@@ -164,10 +164,14 @@ if res:
 
     st.markdown("#### Choques")
     for ch in b.choques:
-        with st.expander(f"{'🔴' if ch.peso == 'alto' else '🟠' if ch.peso == 'medio' else '⚪'} {ch.titulo} → {ch.ganador}"):
+        with st.expander(f"{'🔴' if ch.peso == 'alto' else '🟠' if ch.peso == 'medio' else '⚪'} {ch.titulo} → {ch.ganador} ({ch.margen})"):
+            st.caption(f"Choque {ch.tipo} · peso {ch.peso}: {ch.por_que_peso}")
             st.markdown(f"**Proposición:** {ch.proposicion}\n\n**Oposición:** {ch.oposicion}\n\n**Por qué gana {ch.ganador}:** {ch.por_que}")
             for c in ch.citas:
                 st.caption(f"{c.discurso} · {c.minuto} — “{c.texto}”")
+
+    st.markdown("#### Cómo se decide")
+    st.write(b.ponderacion_final)
 
     st.markdown("#### Lecturas posibles")
     st.markdown(f"**Principal (gana {b.lectura_principal.ganador}):** {b.lectura_principal.argumento}")
@@ -178,15 +182,20 @@ if res:
         [{"Discurso": s["id"], "Orador": res["names"].get(s["id"], ""), "Estilo": by_id[s["id"]].estilo,
           "Contenido": by_id[s["id"]].contenido, "Estrategia": by_id[s["id"]].estrategia, "Total": by_id[s["id"]].total}
          for s in SPEECHES if s["id"] in by_id],
-        hide_index=True, use_container_width=True,
+        hide_index=True, width="stretch",
     )
     for s in SPEECHES:
         p = by_id.get(s["id"])
         if p:
             with st.expander(f"Comentarios para {s['id']} · {res['names'].get(s['id']) or s['rol']}"):
-                st.markdown(f"**Fortalezas:** {p.fortalezas}\n\n**Para mejorar:** {p.a_mejorar}")
+                st.markdown(f"**Fortalezas:** {p.fortalezas}\n\n**Para mejorar:** {p.a_mejorar}\n\n**Cómo:** {p.como_corregir}")
                 for c in p.citas:
                     st.caption(f"{c.minuto} — “{c.texto}”")
+
+    st.markdown("#### Feedback para cada equipo")
+    for fe in b.feedback_equipos:
+        with st.container(border=True):
+            st.markdown(f"**{fe.bando}**\n\n✅ {fe.que_funciono}\n\n🔧 {fe.que_mejorar}\n\n➡️ {fe.como}")
 
     if b.advertencias:
         st.warning("**Advertencias:**\n\n" + "\n".join(f"- {a}" for a in b.advertencias))
