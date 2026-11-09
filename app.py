@@ -199,14 +199,15 @@ if res:
     for s in SPEECHES:
         if s["id"] in by_id:
             tot[s["bando"]] += by_id[s["id"]].total
-    st.success(f"**Gana {b.ganador}** · Proposición {tot['Proposición']} – Oposición {tot['Oposición']} · confianza {b.confianza}")
+    st.info(f"**Lectura sugerida: {b.ganador}** · Proposición {tot['Proposición']} – Oposición {tot['Oposición']} · confianza {b.confianza}\n\n"
+            "La decisión es tuya: Panelista sugiere una lectura para que la compares con la tuya.")
     st.write(b.resumen)
 
     st.markdown("#### Choques")
     for ch in b.choques:
         with st.expander(f"{'🔴' if ch.peso == 'alto' else '🟠' if ch.peso == 'medio' else '⚪'} {ch.titulo} → {ch.ganador} ({ch.margen})"):
             st.caption(f"Choque {ch.tipo} · peso {ch.peso}: {ch.por_que_peso}")
-            st.markdown(f"**Proposición:** {ch.proposicion}\n\n**Oposición:** {ch.oposicion}\n\n**Por qué gana {ch.ganador}:** {ch.por_que}")
+            st.markdown(f"**Proposición:** {ch.proposicion}\n\n**Oposición:** {ch.oposicion}\n\n**Por qué lo inclina hacia {ch.ganador}:** {ch.por_que}")
             for c in ch.citas:
                 st.caption(f"{c.discurso} · {c.minuto} — “{c.texto}”")
 
@@ -214,8 +215,8 @@ if res:
     st.write(b.ponderacion_final)
 
     st.markdown("#### Lecturas posibles")
-    st.markdown(f"**Principal (gana {b.lectura_principal.ganador}):** {b.lectura_principal.argumento}")
-    st.markdown(f"**Alternativa (gana {b.lectura_alternativa.ganador}):** {b.lectura_alternativa.argumento}")
+    st.markdown(f"**Lectura sugerida ({b.lectura_principal.ganador}):** {b.lectura_principal.argumento}")
+    st.markdown(f"**Lectura alternativa ({b.lectura_alternativa.ganador}):** {b.lectura_alternativa.argumento}")
 
     st.markdown("#### Puntajes de orador sugeridos")
     st.dataframe(

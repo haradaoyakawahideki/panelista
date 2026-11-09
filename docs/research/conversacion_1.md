@@ -1,16 +1,22 @@
-# Conversación N — [rol: organizador LPDE / docente en región / juez]
+# Conversación 1 — Felipe Zenteno - Director Académico, LPDE
 
-- Fecha y medio (presencial, llamada, WhatsApp):
-- Quién (rol y región; sin datos personales si no dio permiso):
+- Sábado 7 de noviembre
+- Director Académico, Liga Peruana de Debate Escolar
 
-## Preguntas (sobre su experiencia pasada, no sobre si le gustaría la app)
-1. ¿Cómo preparan y juzgan hoy los debates de práctica?
-2. La última vez que tuvo que juzgar un debate, ¿qué fue lo más difícil?
-3. ¿Cuánto tiempo o dinero le cuesta hoy (traer jueces, viajar a Lima, capacitaciones)?
-4. ¿Qué ha probado para resolverlo?
-5. ¿Cuántas veces por semana practican? ¿Con qué graban (celular, laptop)?
-6. ¿Quién pagaría por algo así (el colegio, la APAFA, el docente, la UGEL)? ¿Cuánto paga hoy por cosas parecidas?
+## Notas de la conversación
 
-## Notas literales
+- Profesores en regiones donde debate no es popular aún tienen dificultades en entrenarse como jueces y entrenar a otros jueces
+- En Lima, son universitarios que hacen debate los que sirven de jueces en torneos escolares, aportando su experiencia
+- Algunas ciudades han logrado formar un grupo considerable de jueces y entrenadores
+- La IA puede servir para ayudar a jueces novatos a entrenarse cuando no tienen acceso a comunidades ya formadas de debatientes 
+- Descentralizar debate implica entrenar a jueces en las sociedades de debate en regiones
+- Los profesores suelen servir de jueces en torneos en las regiones
+- Muchas veces, los docentes tienen limitaciones en las herramientas que utilizan, así como en costear la participación en debate
+- Algunos docentes en regiones tienen poca experiencia usando herramientas digitales
 
 ## Lo que aprendí / qué cambia en el producto
+
+- Herramienta debe ser intuitiva para un docente
+- La herramienta debe ser accesible y compatible con la realidad de los docentes
+
+
