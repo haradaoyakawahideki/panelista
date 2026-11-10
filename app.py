@@ -8,6 +8,7 @@ from pathlib import Path
 
 import base64
 
+import openai
 import streamlit as st
 import streamlit.components.v1 as components
 from openai import OpenAI
@@ -196,7 +197,15 @@ if st.button("Juzgar el debate", type="primary", disabled=not ready or left <= 0
             ballot = Balota.model_validate(hit)
         else:
             st.write("Identificando choques y puntajes…")
-            ballot = judge(client, motion, names, speeches)
+            try:
+                ballot = judge(client, motion, names, speeches)
+            except openai.APIStatusError as e:
+                hint = {401: "La clave de OpenAI no es válida: revisa los Secrets.",
+                        404: f"El modelo {MODEL} no está disponible para esta clave.",
+                        429: "Se acabó el crédito o se alcanzó el tope de gasto de OpenAI."}.get(e.status_code, "")
+                status.update(label="Error al juzgar", state="error")
+                st.error(f"OpenAI respondió {e.status_code}. {hint}\n\n{e.message}")
+                st.stop()
             store.cache_put("ballots", key, ballot.model_dump())
             store.register_use(school)
         ss["result"] = {"ballot": ballot, "speeches": speeches, "names": dict(names), "motion": motion}
