@@ -6,19 +6,23 @@ import tempfile
 from datetime import datetime
 from pathlib import Path
 
+import base64
+
 import streamlit as st
+import streamlit.components.v1 as components
 from openai import OpenAI
 
 from panelista import store
 from panelista.judge import MODEL, judge, segment
 from panelista.schemas import Balota
 from panelista.transcribe import as_text, transcribe
-from panelista.wsdc import SPEECHES, SPEECH_IDS
+from panelista.wsdc import SPEECHES, SPEECH_IDS, TIMING
 
 ROOT = Path(__file__).parent
 DEMO = ROOT / "demo"
 
 st.set_page_config(page_title="Panelista", page_icon="⚖️", layout="centered")
+recorder = components.declare_component("recorder", path=str(ROOT / "panelista" / "recorder"))
 
 
 def get_client() -> OpenAI:
@@ -95,7 +99,8 @@ mode = st.radio(
 )
 full_audio = None
 if mode == "Grabar o subir cada discurso":
-    st.caption("En orden: toca grabar cuando empieza cada orador y detén al terminar.")
+    st.caption("En orden: toca grabar cuando empieza cada orador. El cronómetro toca las campanas "
+               "(1 en 1:00 y 7:00, 2 en 8:00, 3 en 8:15) y corta a las 8:20. Réplicas: 1:00, 3:00, 4:00, 4:15, corte 4:20.")
     for s in SPEECHES:
         sid = s["id"]
         with st.container(border=True):
@@ -106,10 +111,15 @@ if mode == "Grabar o subir cada discurso":
                     del ss["audios"][sid]
                     st.rerun()
             else:
-                rec = st.audio_input("Grabar", key=f"rec_{sid}", label_visibility="collapsed")
+                t = TIMING[s["tipo"]]
+                rec = recorder(bells=t["bells"], limit=t["limit"], key=f"rec_{sid}", default=None)
                 up = st.file_uploader("…o subir archivo", type=["mp3", "m4a", "wav", "ogg", "webm", "aac"], key=f"up_{sid}")
-                if rec or up:
-                    ss["audios"][sid] = (rec or up).getvalue()
+                if rec and rec["id"] != ss.get(f"used_{sid}"):  # a new recording, not a stale one
+                    ss[f"used_{sid}"] = rec["id"]
+                    ss["audios"][sid] = base64.b64decode(rec["b64"])
+                    st.rerun()
+                if up:
+                    ss["audios"][sid] = up.getvalue()
                     st.rerun()
 else:
     up = st.file_uploader("Grabación completa del debate", type=["mp3", "m4a", "wav", "ogg", "webm", "aac", "mp4"])
@@ -175,7 +185,9 @@ if st.button("Juzgar el debate", type="primary", disabled=not ready or left <= 0
             speeches = {}
             for s in SPEECHES:
                 st.write(f"Transcribiendo {s['id']} · {names.get(s['id']) or s['rol']}…")
-                speeches[s["id"]] = transcribe_bytes(client, ss["audios"][s["id"]])
+                limit = TIMING[s["tipo"]]["limit"]
+                segs = transcribe_bytes(client, ss["audios"][s["id"]])
+                speeches[s["id"]] = [x for x in segs if x["start"] < limit]  # nothing after the limit counts
         # same audio + same ballot + same model = same debate: reuse it, don't charge a debate
         key = sha1(json.dumps([MODEL, motion, names, speeches], ensure_ascii=False, sort_keys=True).encode())
         hit = store.cache_get("ballots", key)
