@@ -122,7 +122,7 @@ cp .env.example .env    # y pon tu OPENAI_API_KEY
 | **Por colegio al mes (4 debates)** | **~US$1,50 (≈ S/ 5,6)** |
 | Servidor (Streamlit Community Cloud) | US$0 en la beta |
 
-Margen bruto: unos **S/ 24 por colegio al mes (~80 %)**. Para no gastar de más: tope de gasto mensual en la cuenta de OpenAI, límite de 4 debates por colegio, y caché para no transcribir ni juzgar dos veces el mismo audio.
+Margen bruto: unos **S/ 24 por colegio al mes (~80 %)**. Para no gastar de más: tope de gasto de **US$15 al mes** en la cuenta de OpenAI (alcanza para unos 40 debates de una hora), límite de 4 debates por colegio, y caché para no transcribir ni juzgar dos veces el mismo audio.
 
 **Qué sigue.** (1) Beta con colegios aliados de la LPDE y medir la precisión de los choques frente a jueces humanos. (2) Usar sus correcciones para ajustar la rúbrica. (3) Ofrecerlo a colegios fuera de la liga y a UGEL.
 
