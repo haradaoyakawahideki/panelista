@@ -100,7 +100,7 @@ mode = st.radio(
 full_audio = None
 if mode == "Grabar o subir cada discurso":
     st.caption("En orden: toca grabar cuando empieza cada orador. El cronómetro toca las campanas "
-               "(1 en 1:00 y 7:00, 2 en 8:00, 3 en 8:15) y corta a las 8:20. Réplicas: 1:00, 3:00, 4:00, 4:15, corte 4:20.")
+               "(1 en 1:00 y 7:00, 2 en 8:00, 3 en 8:15) y corta a las 8:20. Réplicas (sin POI): 2 en 4:00, 3 en 4:15, corte 4:20.")
     for s in SPEECHES:
         sid = s["id"]
         with st.container(border=True):

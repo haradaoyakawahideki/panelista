@@ -55,8 +55,9 @@ async function start(){
 function update(){
   const s = (performance.now()-t0)/1000, c = document.getElementById("clock");
   c.textContent = fmt(s);
-  const [first, last] = [args.bells[0][0], args.bells[1][0]];
-  c.className = s < first || (s >= last && s < args.bells[2][0]) ? "protected" : s < last ? "open" : "over";
+  const over = args.bells[args.bells.length-2][0];          // the double bell = time is up
+  const pois = args.bells.length > 2;                         // constructives: 1:00–7:00 open to POIs
+  c.className = s >= over ? "over" : pois && s >= args.bells[0][0] && s < args.bells[1][0] ? "open" : "protected";
   for (const [at, n] of args.bells) if (s >= at && !rung.has(at)) { rung.add(at); bell(n); }
   if (s >= args.limit) stop("Tiempo máximo alcanzado: grabación detenida.");
 }

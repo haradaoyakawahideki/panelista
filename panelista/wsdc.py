@@ -103,6 +103,6 @@ FEEDBACK PEDAGÓGICO (escolares)
 # Constructive 8 min: 1 bell at 1:00 and 7:00 (protected time), 2 at 8:00, 3 at 8:15.
 TIMING = {
     "constructivo": {"bells": [(60, 1), (420, 1), (480, 2), (495, 3)], "limit": 500},
-    # Replies are 4 min in WSDC: same pattern, scaled (assumption, easy to change).
-    "réplica": {"bells": [(60, 1), (180, 1), (240, 2), (255, 3)], "limit": 260},
+    # Replies are 4 min with no POIs (LPDE manual), so no protected-time bells.
+    "réplica": {"bells": [(240, 2), (255, 3)], "limit": 260},
 }
