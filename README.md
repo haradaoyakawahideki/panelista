@@ -4,7 +4,7 @@
 
 > Versión **beta** para la Liga Peruana de Debate Escolar (LPDE), formato WSDC. Panelista no decide quién gana: ayuda a que el docente aprenda a decidirlo.
 
-- **Demo:** _URL pública: pendiente (Streamlit Community Cloud)_ · o en local, ver [Cómo correrlo](#cómo-correrlo)
+- **Demo:** **https://panelista.streamlit.app** · o en local, ver [Cómo correrlo](#cómo-correrlo)
 - **Video de respaldo:** _pendiente_
 
 ---
@@ -61,7 +61,7 @@ Lo que cambió en el producto: Panelista ya no dice "Gana X". Muestra una **lect
 
 ## 6. Demo
 
-**URL:** _pendiente_ · Para probar sin grabar nada: botón **"Cargar debate de demostración"** en la barra lateral y luego **"Juzgar el debate"**.
+**URL:** https://panelista.streamlit.app · Para probar sin grabar nada: botón **"Cargar debate de demostración"** en la barra lateral y luego **"Juzgar el debate"**.
 
 El debate de demostración es **sintético**: un guion escrito para el demo ([`demo/guion.md`](demo/guion.md)) sobre *"Esta Cámara eliminaría el voto obligatorio en el Perú"*, con oradores ficticios y voces generadas con TTS. Así no mostramos a escolares reales, que son menores. El guion tiene errores puestos a propósito (P2 casi no refuta, O3 trae un argumento nuevo) para comprobar que Panelista los detecta.
 
