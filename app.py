@@ -58,7 +58,12 @@ with st.expander("Antes de empezar: qué hace y qué no hace (beta)"):
         "- Escucha el debate, encuentra los **choques**, propone **lecturas** y sugiere **puntajes de orador**.\n"
         "- Juzga **solo lo que se oye**: no ve el lenguaje corporal ni los materiales.\n"
         "- Es una **sugerencia para el docente**, no una decisión final. Aún estamos midiendo su precisión frente a jueces humanos.\n"
-        "- Al subir el audio, el colegio confirma que tiene el **consentimiento de los padres** de los oradores."
+        "\n\n**Términos de uso (beta)**\n"
+        "- Panelista es administrado por la **Liga Peruana de Debate Escolar (LPDE)**. Solo pueden usarlo los **colegios registrados** en la LPDE.\n"
+        "- El colegio es responsable de contar con el **consentimiento de los padres o apoderados** de cada estudiante que se graba.\n"
+        "- Las grabaciones, transcripciones y balotas **se usan para entrenar y evaluar a Panelista**. La LPDE puede acceder a ellas con fines de **investigación, académicos y comerciales**.\n"
+        "- El audio y el texto se procesan con **OpenAI** (Estados Unidos), que no los usa para entrenar sus propios modelos.\n"
+        "- Al subir un audio, el colegio **acepta estos términos**."
     )
 
 with st.sidebar:
