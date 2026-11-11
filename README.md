@@ -5,7 +5,7 @@
 > Versión **beta** para la Liga Peruana de Debate Escolar (LPDE), formato WSDC. Panelista no decide quién gana: ayuda a que el docente aprenda a decidirlo.
 
 - **Demo:** **https://panelista.streamlit.app** · o en local, ver [Cómo correrlo](#cómo-correrlo)
-- **Video de respaldo:** _pendiente_
+- **Video de respaldo (56 s):** [docs/video/demo_panelista.mp4](https://github.com/haradaoyakawahideki/panelista/blob/main/docs/video/demo_panelista.mp4)
 
 ---
 
